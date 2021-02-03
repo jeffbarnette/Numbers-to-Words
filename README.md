@@ -35,11 +35,11 @@ docker-compose up
 
 5. Here are a few more random examples you can try:
 
-[150,000](http://localhost:8000/num_to_english?number=150000) should return "one hundred fifty thousand".
-[1,000,000](http://localhost:8000/num_to_english?number=1000000) should return "one million".
-[55](http://localhost:8000/num_to_english?number=55) should return "fifty five".
-[888,000](http://localhost:8000/num_to_english?number=888) should return "eight hundred eighty eight thousand".
-[-752,000,000,000](http://localhost:8000/num_to_english?number=100) should return "negative seven hundred fifity two billion".
+- [150,000](http://localhost:8000/num_to_english?number=150000) should return "one hundred fifty thousand".
+- [1,000,000](http://localhost:8000/num_to_english?number=1000000) should return "one million".
+- [55](http://localhost:8000/num_to_english?number=55) should return "fifty five".
+- [888,000](http://localhost:8000/num_to_english?number=888) should return "eight hundred eighty eight thousand".
+- [-752,000,000,000](http://localhost:8000/num_to_english?number=100) should return "negative seven hundred fifity two billion".
 
 _Note: For additional manual testing using the GET and POST methods see the Using Postman section below._
 
