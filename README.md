@@ -2,21 +2,19 @@
 An code exercise in converting numbers into English words using Python and Django
 
 ## Key Features
+- Dockerized container for easy setup.
 - Supports any positive or negative number of any length.
 - Works with both GET and POST request methods.
 - Includes advanced error handling with HTTP response codes.
-- Includes unit and integration tests (local only).
+- Includes Postman collection for manual testing.
 
 ## Prerequisites
 - [Docker Desktop](https://docs.docker.com/desktop/)
 - [Postman](https://www.postman.com/downloads/) (if manually testing endpoints)
-- [Python 3.8.x](https://www.python.org/downloads/release/python-387/) (if running locally)
-- [Pipenv](https://pypi.org/project/pipenv/) (if running locally)
 
 ## Contents
 - [Local Setup and Usage](#Local-Setup-and-Usage)
 - [Using Postman](#Using-Postman)
-- [Unit and Integration Testing](#Unit-and-Integration-Testing)
 
 
 ### Local Setup and Usage
@@ -53,37 +51,6 @@ You can use Postman and the included Postman collection for manual testing of bo
 Once you have the collection imported, you can begin experimenting with the **GET** and **POST** requests. You can change the querystring in the **GET** request (just like you might have done during the initial setup steps described above) or under Params. Then click **Send**.
 
 For the **POST** request, you can modify the number value under the body > raw section. Then click **Send**.
-
-
-### Unit and Integration Testing
-
-_Note: Python 3.8.x is required to already be installed on your system. It is also recommended that you use a virtual environment such as **pipenv** or **pyenv** before installing dependencies._
-
-1. Make sure you have Python 3.8.x installed, then to install pipenv (if you don't already have it) run the command:
-
-```
-pip install pipenv
-```
-
-2. Next, setup your virtual environment by running the command which will also install the dependencies:
-
-```
-pipenv install
-```
-
-3. Enter the virtual environment by running the command:
-
-```
-pipenv shell
-```
-
-4. The unit and integration tests are run using the built in testing system in Django. To run all of the tests use the following command:
-
-```
-python manage.py test
-```
-
-5. Finally, once you are done running the tests, you can deactivate the virtual envorinment by typing **deactivate** and press return.
 
 
 ### Changelog

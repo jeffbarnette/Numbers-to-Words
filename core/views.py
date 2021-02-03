@@ -36,12 +36,6 @@ def num_to_english(request):
     # Validate number
     if number and validate_number(number):
         words = transform_number_to_words(number)
-
-        if not words:
-            # Words were not returned
-            error_message = f'Cannot convert {len(number)} numbers to words!'
-            return HttpResponseServerError(
-                json.dumps({'status': error_message}, indent=4), status=422)
     
         if 'Error' in words:
             # Number string was invalid

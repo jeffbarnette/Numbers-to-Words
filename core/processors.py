@@ -59,6 +59,10 @@ def _number_position(number):
             break
     return _divider(number, 1000**illions_number, illions_name)
 
+def _join(*args):
+    """Function to handle joins and adds spaces"""
+    return ' '.join(filter(bool, args))
+
 def _divider(dividend, divisor, magnitude):
     """Function to handle large division"""
     return _join(
@@ -66,7 +70,3 @@ def _divider(dividend, divisor, magnitude):
         magnitude,
         _number_position(dividend % divisor),
     )
-
-def _join(*args):
-    """Function to handle joins and adds spaces"""
-    return ' '.join(filter(bool, args))
