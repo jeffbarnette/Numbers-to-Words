@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "a220eb4a-25c2-4a92-a5ec-75bb91727b63",
+		"name": "Numbers to Words",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET num_to_english",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/num_to_english?number=100",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"num_to_english"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "100"
+						}
+					]
+				},
+				"description": "Try changing the query param value for the number key to any number of any length."
+			},
+			"response": []
+		},
+		{
+			"name": "POST num_to_english",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\": \"100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/num_to_english",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"num_to_english"
+					]
+				},
+				"description": "Try changing the number value to any number of any length"
+			},
+			"response": []
+		}
+	]
+}
